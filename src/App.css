@@ -1,28 +1,71 @@
-.App {
-  text-align: center;
+
+* {
+ margin: 0;
+ padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.body {
+  font-family: 'Mukta Mahee, sans-serif'; 
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+nav ul {
+  list-style: none;
+  display: none;
+}
+
+nav ul a {
+  display: block;
+  background: #0d1317;
   padding: 20px;
-  color: white;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ad343e;
+  transition: color 2s ease,background 1s ease,padding 1s ease;
 }
 
-.App-title {
-  font-size: 1.5em;
+nav ul a:hover {
+  background: #474747;
+  color: #e0e0ce;
+  padding-left: 30px;
 }
 
-.App-intro {
-  font-size: large;
+.nav-container img {
+  width: 100px;
+  align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: #474747;
+  border-bottom: 3px solid #ad343e;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 7px;
+  background: #ad343e;
+}
+
+.btn {
+  padding: 2px;
+  display: inline-block;
+  border: 2px solid #ad343e;
+  align-self: center;
+}
+
+.banner-center img {
+  width: 200px;
+}
+
+header {
+  min-height: 100vh;
+  background: url(https://images.pexels.com/photos/980221/pexels-photo-980221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
