@@ -21,7 +21,7 @@ nav ul a {
   text-decoration: none;
   text-transform: uppercase;
   color: #ad343e;
-  transition: color 2s ease,background 1s ease,padding 1s ease;
+  transition: color 2s ease, background 1s ease,padding 1s ease;
 }
 
 nav ul a:hover {
@@ -63,9 +63,25 @@ nav ul a:hover {
 
 header {
   min-height: 100vh;
-  background: url(https://images.pexels.com/photos/980221/pexels-photo-980221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.3)), url(https://images.pexels.com/photos/980221/pexels-photo-980221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)center/cover fixed no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  flex: 0 0 auto;
+}
+
+.banner {
+  flex:1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 50px;
+  text-decoration: uppercase;
+  color: #0d1317;
 }
