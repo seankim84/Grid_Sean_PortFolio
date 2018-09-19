@@ -32,7 +32,7 @@ class App extends Component {
               <h1>About Sean<span clanssName="and"> &amp;
               </span>co</h1>
               <h3>Intro of MySelf to Friends</h3>
-              <div className="banner-icon">
+              <div className="banner-icons">
                 <a href=""><i class="fab fa-pinterest-square"></i></a>
                 <a href=""><i class="fab fa-facebook-square"></i></a>
                 <a href=""><i class="fab fa-instagram"></i></a>

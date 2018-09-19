@@ -85,3 +85,39 @@ nav {
   text-decoration: uppercase;
   color: #0d1317;
 }
+
+.banner h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #0d1317;
+}
+
+.and {
+  color: #f5f3f5;
+}
+
+.banner-icons {
+  padding: 20px;
+}
+
+.banner-icons a {
+  display: inline-block;
+  font-size: 30px;
+  background: #474747;
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #f5f3f5;
+  transition: color 1s ease, transform 1s ease;
+}
+
+.banner-icons a:hover {
+  color: #ad343e;
+  transform: translateY(-10px);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index:10;
+}
