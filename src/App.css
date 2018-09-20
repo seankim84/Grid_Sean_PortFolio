@@ -121,3 +121,69 @@ nav {
   width: 100%;
   z-index:10;
 }
+
+@media screen and (min-width:776px) {
+  .nav-container{
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(13, 19, 23, 0.8)
+  }
+  nav ul a {
+    background: transparent;
+  }
+}
+
+
+/* section service */
+
+.services {
+  color: white;
+  min-height: 100vh;
+  background: url(https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)center/cover fixed no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  color: #81d8f7;
+  display: flex;
+  margin: 40px;
+}
+
+.service-icon {
+  align-self: center;
+  font-size: 60px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 3px solid #f5f3f5;
+  border-radius:50%;
+}
+
+.service-text h3  {
+  text-transform: uppercase;
+}
+
+.service-text p {
+  line-height: 2;
+  margin-top: 5px;
+}
+
+@media screen and (min-width:576px){
+  .services-center{
+    width: 70%;
+
+  }
+}
+
+@media screen and (min-width:776px){
+  .service-center {
+    width: 50%;
+  }
+  .service-text p {
+    width: 70%;
+  }
+}
