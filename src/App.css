@@ -187,3 +187,127 @@ nav {
     width: 70%;
   }
 }
+
+.projects {
+  padding: 0 0 100px 0;
+  background: #f5f3f5;
+}
+
+.title h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #474747;
+}
+
+.title-underline {
+  background: #ad343e;
+  width:100px;
+  height: 4px;
+  margin: 10px auto;
+}
+
+.title {
+  padding: 50px 0;
+
+}
+
+.project{
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+  overflow: hidden;
+
+}
+
+.project img {
+  width: 100%;
+
+  display: block;
+  transition:opacity 1s ease, transform 2s ease;
+}
+
+.project img:hover {
+  opacity: 0.3;
+  cursor: pointer;
+  transform: scale(1.3);
+}
+/*
+@media screen and (min-width:576px) {
+  .projects-center {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .project{
+    flex: 0 0 calc(50%);
+  }
+}
+
+@media screen and (min-width:776px) {
+  
+  .project{
+    flex: 0 0 calc(33.3333333%);
+  }
+}
+*/
+
+@media screen and (min-width:576px) {
+  .projects-center{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width:992px) {
+  .projects-center{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About */
+
+.about {
+  color: white;
+  min-height: 100vh;
+  padding: 100px 0;
+  background: url(https://images.pexels.com/photos/132650/pexels-photo-132650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  background: rgba(255,255,255, 0.6);
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.about-card h3 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.about-card i {
+  font-size: 60px;
+  color: #ad343e;
+  margin: 20px 0;
+}
+
+.about-card p {
+  line-height: 2;
+}
+
+@media screen and (min-width:776px){
+  .about-card {
+    max-width:50%;
+    border-radius: 30px;
+  }
+  .about-card p {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.filter{
+  min-height: 60vh;;
+  background: url(https://images.pexels.com/photos/34124/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center/cover fixed no-repeat;
+}
