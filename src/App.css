@@ -188,6 +188,8 @@ nav {
   }
 }
 
+/* projects */
+
 .projects {
   padding: 0 0 100px 0;
   background: #f5f3f5;
@@ -310,4 +312,28 @@ nav {
 .filter{
   min-height: 60vh;;
   background: url(https://images.pexels.com/photos/34124/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center/cover fixed no-repeat;
+}
+
+/*footer*/
+
+footer {
+  background:#0d1317;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer-icons a {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 10px 20px 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: #f5f3f5;
+  color: #0d1317;
+}
+
+footer p {
+  color: #f5f3f5;
+  font-size: 20px;
+  letter-spacing: 1.6px;
 }

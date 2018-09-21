@@ -139,7 +139,15 @@ class App extends Component {
         </section>
 
         <section className="filter"></section>
-
+        
+        <footer>
+          <div className="footer-icons">
+            <a href=""><i class="fab fa-pinterest-square"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </div>
+          <p>Copyright&copy;FastAndPrecise All rights reserved</p>
+        </footer>
       </body>
     );
   }
