@@ -75,63 +75,62 @@ class App extends Component {
 
         <section className="projects">
           <div className="card">
-            <div className="card-title" style={{ background:"url(https://cdn-images-1.medium.com/max/679/1*qUlxDdY3T-rDtJ4LhLGkEg.png) center/cover "}}>React</div>
-            <div className="card-bottom">
-              <div className="card-text"> Movie_Web</div>
-              <div className="btn">Get Started</div>
-            </div>
-            
+            <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="react"/>
+            <div className="card-bar"></div>
+            <div className="container">
+              <h3><b>Movie_Web</b></h3>
+              <div className="card-btn">Get Started</div>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{background:"url(https://cdn-images-1.medium.com/max/1600/1*DVkLFr953djSo0q6cA0-kg.png) center/cover "}}>React_Native</div>
-            <div className="card-text">Weather_App</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "https://s3.amazonaws.com/clarityfm-production/attachments/6605/default/django.png?1442839704" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{ background:"url(https://s3.amazonaws.com/clarityfm-production/attachments/6605/default/django.png?1442839704) center/cover "}}>Django</div>
-            <div className="card-text">sadfljsldkfjlsakjdflkjsadflksldfjkslfdjlsakdfjlskj</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "https://camo.githubusercontent.com/011f821efc77f28ac981c7804b92ad2ffa93cfc1/68747470733a2f2f7777772e7265696e6465782e696f2f626c6f672f6275696c64696e672d612d6772617068716c2d7365727665722d776974682d6e6f64652d6a732d616e642d73716c2f4772617068514c5f4e6f64654a532e706e67" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{ background:"url(https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1489714904/typescript.png) center/cover "}}>TypeScript</div>
-            <div className="card-text">sadfljslddjlsakdfjlskj</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "http://professional-guru.com/wp-content/uploads/2017/12/Blockchain-Logo-White-1.png" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{ background:"url(https://camo.githubusercontent.com/011f821efc77f28ac981c7804b92ad2ffa93cfc1/68747470733a2f2f7777772e7265696e6465782e696f2f626c6f672f6275696c64696e672d612d6772617068716c2d7365727665722d776974682d6e6f64652d6a732d616e642d73716c2f4772617068514c5f4e6f64654a532e706e67) center/cover "}}>Apollo/GraphQL</div>
-            <div className="card-text">sadfljsldkfjlsakjdflkjsadflksldfjkslfdjlsakdfjlskj</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{background:"url(http://professional-guru.com/wp-content/uploads/2017/12/Blockchain-Logo-White-1.png) center/cover "}}>BlockChain</div>
-            <div className="card-text">sadfljsldkfjlsakjdflkjsadflksldfjkslfdjlsakdfjlskj</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "https://www.datocms-assets.com/205/1516875064-next.svg" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{ background:"url(https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png) center/cover "}}>Redux</div>
-            <div className="card-text">sadfljsldkfjlsakjdflkjsadflksldfjkslfdjlsakdfjlskj</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
           <div className="card">
-            <div className="card-title" style={{ background:"url(https://www.datocms-assets.com/205/1516875064-next.svg) center/cover "}}>NEXT.JS</div>
-            <div className="card-text">sadfljsldkfjlsakjdflkjsadflksldfjkslfdjlsakdfjlskj</div>
-            <div className="card-action">
-              <button>Get Start</button>
-            </div>
+            <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="react"/>
+            <div className="container">
+              <h4><b>Movie_Web</b></h4>
+              <p>React</p>
+              </div>
           </div>
-               
         </section>
 
         <section className="about">
