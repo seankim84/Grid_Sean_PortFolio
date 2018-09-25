@@ -189,12 +189,12 @@ nav {
 }
 
 .projects {
-  width: auto;
+  width: auto ;
   height: 95vh;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 5%;
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.2)) ,url(https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/595847/pexels-photo-595847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)center/cover fixed no-repeat;
   justify-items: center;
 }
 
