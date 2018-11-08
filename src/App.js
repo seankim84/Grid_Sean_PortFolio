@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BackTop } from 'antd';
+import scrollToComponent from 'react-scroll-to-component';
 
 class App extends Component {
+  componentDidMount() {
+    scrollToComponent(this.Blue, {
+      offset: 0,
+      align: 'middle',
+      duration: 500,
+      ease: 'inCirc'
+    });
+  }
+
   render() {
     return (
       <body>
-        <header>
+        <header ref={(section) => {this.header = section}}>
           <nav>
             <div className="nav-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png" alt="React_Logo"/>
@@ -17,31 +28,32 @@ class App extends Component {
             </div>
 
             <ul>
-              <li><a href="a">HOME</a></li>
-              <li><a href="b">ABOUTME</a></li>
-              <li><a href="c">EDUCATION</a></li>
-              <li><a href="d">RESUME</a></li>
-              <li><a href="e">GALLERY</a></li>
-              <li><a href="f">CONTACT</a></li>
+              <li onClick={() => scrollToComponent(this.header, { offset: 0, align: 'top', duration: 700, ease:'inExpo'})}>HOME</li>
+              <li onClick={() => scrollToComponent(this.services, { offset: 0, align: 'top', duration: 700, ease:'inExpo'})}>ABOUTME</li>
+              <li onClick={() => scrollToComponent(this.projects, { offset: -50, align: 'top', duration: 700, ease:'inExpo'})}>PROJECTS</li>
+              <li onClick={() => scrollToComponent(this.about, { offset: -50, align: 'top', duration: 700, ease:'inExpo'})}>CONTACT</li>
             </ul>
           </nav>
 
           <div className="banner">
+          <BackTop className="ant-back-top">
+            <div className="ant-back-top-inner">Top</div>
+          </BackTop>
             <div className="banner-center">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png" alt="React_Logo"/>
               <h1>Welcome to Sean's Space<span clanssName="and"> 
               </span></h1>
               <h3>Where there's a will, there's a way</h3>
               <div className="banner-icons">
-                <a href=""><i class="fab fa-pinterest-square"></i></a>
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/seankim84" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/sean.kim.31586" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/sean.kim84/" target="blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
         </header>
 
-        <section className="services">
+        <section ref={(section) => {this.services = section;}} className="services">
           <div className="services-center">
             <article className="service">
               <div className="service-icon">
@@ -73,7 +85,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="projects">
+        <section ref={(section) => {this.projects = section}} className="projects">
           <div className="card">
             <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="react"/>
             <div className="card-bar"></div>
@@ -133,7 +145,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section className="about">
+        <section ref={(section) => {this.about = section}} className="about">
           <article className="about-card">
             <h3>about Me</h3>
             <i class="far fa-bell"></i>
@@ -145,11 +157,11 @@ class App extends Component {
         
         <footer>
           <div className="footer-icons">
-            <a href=""><i class="fab fa-pinterest-square"></i></a>
-            <a href=""><i class="fab fa-facebook-square"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/seankim84" target="blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/sean.kim.31586" target="blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/sean.kim84/" target="blank"><i class="fab fa-instagram"></i></a>
           </div>
-          <p>Copyright&copy;FastAndPrecise All rights reserved</p>
+          <p>Copyright&copy;Sean's All rights reserved</p>
         </footer>
       </body>
     );
