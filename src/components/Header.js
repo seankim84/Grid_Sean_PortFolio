@@ -1,5 +1,4 @@
 import React from 'react';
-import { BackTop } from 'antd';
 import Scroll from 'react-scroll-to-element';
 
 const Header = (props) => (
@@ -21,9 +20,6 @@ const Header = (props) => (
         </ul>
       </nav>
       <div className="banner">
-      <BackTop className="ant-back-top">
-        <div className="ant-back-top-inner">Top</div>
-      </BackTop>
         <div className="banner-center">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png" alt="React_Logo"/>
           <h1>Welcome to Sean's Space<span clanssName="and"> 

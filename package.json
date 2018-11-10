@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.10.4",
+    "antd": "3.8.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-mdl": "^1.11.0",
     "react-scripts": "1.1.5",
     "react-scroll-to-element": "^0.2.0"
   },
