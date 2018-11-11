@@ -64,7 +64,7 @@ nav ul li:hover {
 
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1)), url(https://images.pexels.com/photos/1230739/pexels-photo-1230739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)center/cover fixed no-repeat;
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1)), url(https://images.pexels.com/photos/1230739/pexels-photo-1230739.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center/cover fixed no-repeat;
   display: flex;
   flex-direction: column;
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs, Drawer, List, Avatar, Divider, Col, Row, Card } from 'antd';
+import ImageData from '../ImageData/data';
 
 const TabPane = Tabs.TabPane;
+const { Meta } = Card;
 
 function callback(key) {
   console.log(key);
@@ -55,34 +57,23 @@ class CardImage extends Component {
   render() {
     return (
       <div>
-        <div style={{ background: 'none', padding: '30px' }}>
-          <Row gutter={16}>
-            <Col span={6}
-                 dataSource={[
-                  {
-                    name: 'Sean',
-                  },
-                  {
-                    name: 'Lily',
-                  },
-                ]}
-                  bordered
-                  renderItem={item => (
-                    <Card.Item key={item.id} actions={[<a onClick={this.showDrawer}>View Profile</a>]}>
-                    <Card.Item.Meta
-                      avatar={
-                              <Avatar src="https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png" />
-                      }
-                      title={<a href="https://ant.design/index-cn">{item.name}</a>}
-                      description="Progresser AFX"
-                      />
-                    </Card.Item>
-                    )}
-                    >
-              <Card title="Card title" bordered={false}>Card content</Card>
-            </Col>
-          </Row>
-        </div>
+        <Row style={{padding:"30px" }}>
+            {ImageData.map(data => (
+              
+                <Col span={6} style={{
+                  background: `url(${data.imageData})`,
+                  backgroundRepeat: "none",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  display: "grid",
+                  width: '30%',
+                  height: "35vh",
+                  margin: "10px"
+                }} >
+                </Col>
+              
+            ))}  
+        </Row>
         <List
           dataSource={[
             {
